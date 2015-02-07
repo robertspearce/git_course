@@ -1,0 +1,77 @@
+Why is source code control good:
+* because it helps to spot bugs.
+** When something used to work, but now no longer works, it is possible to check the difference.
+
+* Diff is a built in program in unix and mac for checking the differences
+  between files.
+* <code> diff -u <file-1> <file[2>
+* shows the name of the file at the top. A + by lines that are in file-2, but not file-1, and a - by lines that are in file-1 but not file-2.
+
+How could having easy access to the entire history of a file make you a more efficient programmer in the long term.
+* You would not worry about making mistakes. If you do make a mistake, it would be possible to undo it easily.
+* Makes finding bugs easier. If you have a tagged known working version, it is possible to see what is wrong.
+
+Feature comparison chart:
+	Any Editor	Use Offline	Manual Save
+Manual
+Saving	Yes		Yes		Yes
+
+Dropbox	Yes		No		Yes
+
+Google
+Docs	No		No		No
+
+Wikip
+edia	No		No		Yes
+
+git	Yest		Yes		Yes
+
+svn	Yes		No		Yes
+
+Commits
+* Can have comments.
+* Makes looking through history easy.
+
+git log
+* shows each commit to git.
+* each commit has a comment and an id (which uniquely identifies the commit).
+
+git diff
+* compares different versions of a file in git.
+* use the ids of the versions.
+* can colorize the diffs.
+
+How often to commit?
+Since you can choose when to make a commit, you might be wondering how often to commit your changes. It's usually a good idea to keep commits small. As the diff between tow versions gets bigger, it gets harder to understand and less usful. However, you don't want to make your commits too small either. If you always save a commit every time you change a line of code, your history will be harder to read, since it will have a huge number of commits over a short time period.
+
+A good rule of thumb is to make one commit per logical change. For example, if you fixed a type, then fixed a bug in a sperate part of the file, you should use one commit for each change since they are logically separate. If you do this, each commit will have one purpose that can easily be understood. Git allows you to write a short message explaining what was changed in each commit, and that message will be more useful if each commit has a single logical change.
+
+What do you think are the pros and cons of manually choosing when to create a commit, like you do in git, vs having versions automatically saved, like Google docs does:
+*+ can put a comment by each commit, to remind of purpose.
+*+ you are in control & know when commit is in a reasonable state.
+*+ automated system may not decide well when to commit.
+*- may forget to commit.
+*- committing is a chore.
+*+ All associated files are in the same 
+
+repository:
+All files that are committed together.
+A commit is a snapshot of all files that are effected each time any of the files
+is changed.
+
+git log --stat
+shows git log showing which files are effected in the commit.
++ and - signs next to each file name indicate how many changes are
+  in each of the files.
+
+Why do you think some version control systems, like Git allow saving multiple files in one commit, while others like google docs treat each file separately?
+* It is useful to see all changes related to a feature or fix, even if these are in separate files.
+* Where changes are independent, this is not necessary, but in code this is not the case.
+
+How can you use commands git log and git diff to view the history of files?
+* Use git log to show all commits for a file.
+* Use git diff to show the changes that were made in a given commit by using
+     git diff <prev version> <current version>
+
+How might using version control make you more confident to make changes that could break something?
+* If there was an earlier working version, it is always possible to go back to a working version, and view the code that was committed to determine which change introduced the error.
