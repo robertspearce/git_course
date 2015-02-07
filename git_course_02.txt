@@ -1,4 +1,8 @@
 What happens when you initialize a repository? Why do you need to do it?
 * An empty .git folder is created
 * To set up your repository to accept commits.
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+* Staging area contains files added from the working directory.
+* It a bit like a working list in idea.
+* Can add all files we have operated on, and commit them all at once.
 
