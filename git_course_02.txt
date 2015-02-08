@@ -16,3 +16,11 @@ What are some situations when branches would be helpful in keeping your hstory o
 * When sharing code, different developers can change the same file - if they have different branches this does not matter any more.
 * May want to have different branches with different features.
 * Can fork software if you have a disagreement about how it should work.
+
+How do the diagrams help you visualize the branch structure?
+* Can see which commits belong with which branch.
+
+What is the reult of merging two branches together? Why do we represent it in the diagram the way we do?
+* Merging two branches puts all commits from one branch into another.
+* This is shown in the diagram as two branches combining.
+* On showing the log of a merged branch, the commits from both branches will be show.
