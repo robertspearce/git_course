@@ -14,3 +14,20 @@ Describe the difference between forks, clones and branches. When would you use o
 * Clone: Take a copy of either a local or remote repository to work on locally.
 ** When you want to work on a shared repository you would take a clone. When any changes are made to your local repository, they can be pushed back to the remote repository.
 * Branch: Take a copy of a remote repository. You would do this if you wanted to develop some remote repository, but you do not want to share your changes back.
+
+Note:
+git log and git status run locally - can run from the forest.
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+* Can work on the train (or anywhere else that there may be no internet connection), and still see the commit history.
+* Can make changes to our local repository, and commit them at a later date
+
+Git pull request.
+* Used to ask for confirmation before updating git master.
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+* Pair programming might be easier, but assumes that constant communication is possible.
+* Can use a none-distrubuted repository (e.g. subversion). Would have to set up your own subversion server - there isn't one provided unlike GitHub.
+* Could send changes over email, or a shared location, and merge manually. 
+* GitHub pull requests make it easy to review code before merging.
+
