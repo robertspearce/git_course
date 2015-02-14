@@ -24,3 +24,10 @@ What is the reult of merging two branches together? Why do we represent it in th
 * Merging two branches puts all commits from one branch into another.
 * This is shown in the diagram as two branches combining.
 * On showing the log of a merged branch, the commits from both branches will be show.
+
+What are the pros and cons of Git's automatic merging vs. always doing merges manually?
+* Having automatic merges is less time consuming.
+* Automatic merges very nearly always do the right thing.
+* It is not always possible to do an automatic merge.
+* If you manually merge, you might also get it wrong, but at least you know what you are getting.
+* There may be automated tests that work on both sets of pre-merged code, but will not work on the merged version - you may therefore be committing code that will fail the tests.
