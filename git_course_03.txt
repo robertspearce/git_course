@@ -31,3 +31,8 @@ How would you collaborate without using Git or GitHub? What would be easier, and
 * Could send changes over email, or a shared location, and merge manually. 
 * GitHub pull requests make it easy to review code before merging.
 
+When would you want to make changes in a separate branch rather directly in master? What benefit does each approach have?
+* Can take a branch and add a new feature in this. There may be other teams that are working on other features, and you do not want to step on one anothers toes. 
+* Master branch may contain only completed features, can have seperate branch with incomplete features.
+* Master branch contains the release candidate - no partly complete, or untested code.
+
